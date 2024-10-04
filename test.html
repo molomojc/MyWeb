@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px auto;
+            max-width: 982px;
+            padding: 0;
+        }
+
+        #hlsjsvod {
+            background-image: url(https://images.unsplash.com/photo-1573496358349-d97974b2339b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="hlsjsvod" class="fp-slim"></div>
+
+<!-- Include the Flowplayer library -->
+<script src="https://cdn.flowplayer.com/releases/native/stable/flowplayer.min.js"></script>
+
+<script>
+    window.onload = function() {
+        flowplayer("#hlsjsvod", {
+            splash: true,
+            aspectRatio: "16:9",
+            clip: {
+                hlsjs: { safari: true },
+                sources: [
+                    {
+                        type: "application/x-mpegurl",
+                        src: "https://s3.amazonaws.com/favadb-hls/8fd9634bddf7f5303e35/5fea217230c60100b371.m3u8"
+                    }
+                ]
+            }
+        });
+    };
+</script>
+
+</body>
+</html>

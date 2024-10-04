@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyVideo</title>
+   <style>
+   body{
+    background-color:#ccc;
+   } .btn {
+        position: relative;
+        left: 45%;
+        height: 20px;
+        border-radius: 25px;
+        width: 50px;
+      }
+      #myvideo{
+        position:relative;
+        left:13%;
+        height:70%;
+        width:70%;
+      }
+      </style>
+</head>
+<body>
+    
+<video src="Sample.m4v" type="video/mp4" id="myvideo"></video>
+<br>
+<button onclick="playfunc()" type="button" class="btn">PLay </button>
+<button onclick="pausefunc()" type="button" class="btn">Stop </button>
+    
+
+<script>
+    let vid = document.getElementById("myvideo");
+
+    function playfunc(){
+        vid.play();
+    }
+    function pausefunc(){
+        vid.pause();
+    }
+
+    </script>
+</body>
+</html>
