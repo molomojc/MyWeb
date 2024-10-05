@@ -1,0 +1,262 @@
+/* Global reset and font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    font-family: "Roboto", sans-serif;
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    align-items: center;
+    background: #18283B;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #8291A5;
+    padding: 8px 30px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+ul li a:hover,
+ul li a.active {
+    color: #FFF;
+    background: #0075FF;
+}
+
+/* Icon for mobile view */
+#icon {
+    background-color: #0075FF;
+    padding: 5px 7px 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#icon svg {
+    color: #FFF;
+    height: 28px;
+    transition: all 0.3s ease;
+}
+
+#icon:hover {
+    background: #FFF;
+}
+
+#icon:hover svg {
+    color: #0075FF;
+}
+
+#checkbox,
+#icon {
+    display: none;
+}
+
+.link i {
+    padding-left: 7px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+
+/* Responsive Nav for mobile */
+@media screen and (max-width: 768px) {
+    nav {
+        border-bottom: 1px solid #455468;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 71px);
+        background-color: #18283B;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: none;
+        margin-top: 71px;
+    }
+
+    ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    #checkbox:checked ~ ul {
+        display: block;
+    }
+}
+
+/* Home Section Styling */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 9%;
+    background-color:#ccc;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.home-content span {
+    color: #18f7b8; /* Ensured var(--main-color) consistency */
+}
+
+.home-content h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+/* Image animations */
+.home-img img {
+    width: 30vw;
+    border-radius: 40%;
+    animation: IMG 2s ease-in-out infinite;
+}
+
+@keyframes IMG {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Social Media Icons */
+.social-media-icon a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    color: #fff;
+    background: transparent;
+    border: 0.2rem solid #18f7b8;
+    border-radius: 10px;
+    margin: 2rem 5rem 3rem 0;
+    transition: 0.5s ease;
+}
+
+.social-media-icon a:hover {
+    background: #18f7b8;
+    color: #101a25;
+    box-shadow: 0 0 2rem #18f7b8;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 1.5rem 2.8rem;
+    background: #18f7b8;
+    border-radius: 3rem;
+    box-shadow: 0 0 2rem #18f7b8;
+    font-size: 1.6rem;
+    color: #101a25;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    font-weight: 600;
+    transition: 0.5s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+/* Media Queries */
+
+/* Adjustments for smaller devices */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .social-media-icon a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 450px) {
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-img img {
+        width: 80vw;
+    }
+
+    .btn {
+        padding: 1.2rem 2rem;
+        font-size: 1.4rem;
+    }
+}
