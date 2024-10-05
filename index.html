@@ -9,41 +9,45 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Make sure to link your compiled CSS file -->
+    <link rel="stylesheet" href="style2.css"> <!-- Make sure to link your compiled CSS file -->
 </head>
 <body>
  
 
+<nav>
+    <div class="logo">JM Molomo</div>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" id="icon">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </label>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="details2.php">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
-<div class="sub-menu">
-  <a class="active" href="#">Home</a>
-  <div class="sub-menu-nav">
-    <a class="nav-btn"  href="details2.html">Details</a>
-   
-  </div> 
-  <div class="sub-menu-nav">
-    <a class="nav-btn">Education</a>
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, Welcome</h3>
+        <br>
+        <h1>JM Molomo</h1>
+       
+        <br>
+        <br>
+        <p>As a dedicated upcoming full-stack developer,<br> I specialise
+            in creating comprenhensive web applications that combine<br>
+            seamless user experiences with powerful backend functionality.
+            </p>
+        <button class="btn">Download CV</button>
+    </div>
     
-  </div> 
-  <div class="sub-menu-nav">
-    <a class="nav-btn">Biography</a>
-   
-  </div>
-  <a href="#">Projects</a>
-</div>
-
-<div class="container">
-  <div>
-    <h1 class="type">Building Robust Solutions from Front-End to Back-End</h1>
-  </div>
-</div>
- 
-<p class = "roboto-condensed-p" >&nbsp &nbsp As a dedicated upcoming full-stack developer,<br> I specialise
-    in creating comprenhensive web applications that combine<br>
-    seamless user experiences with powerful backend functionality.
-   <br> With a keen eye for detail and a passion for innvation,<br>
-    I transform ideas into robust digital solutions that drive'
-    success </p>
+    <div class="home-img">
+        <img src="background/Screenshot (51).png" alt="My Image">
+    </div>
+</section>
 
 </body>
 </html>
