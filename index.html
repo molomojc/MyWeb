@@ -3,51 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Portfolio</title>
+    <!--Add the  libraries-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style2.css"> <!-- Make sure to link your compiled CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
- 
+<body> 
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+        </label>
+        <label class="logo">JMOLOMO</label>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#education" >Education</a></li>
+          <li><a href="#projectt" >Project</a></li>
+          <li><a href="#" >Contact</a></li>
+        </ul>
+        <button class="Main">GitHub</button>
+    </nav>
+    <div class="container" style="color:white;">
+        <div class="Intro">
+           <h3>Hi, Welcome.</h3>
+           <h2 class="one">I'm Jacob Molomo</h2>
+          
+           <h3>Beginner full-stack Dev.</h3>
+          
+           <p>With a solid foundation in programming and mathematical modeling,
+            <br> I have experience developing efficient systems,
+            <br> such as a shopping platform.
+            <br> Driven by a passion for problem-solving and innovation,
+            <br> I integrate theoretical knowledge with practical applications to create impactful solutions in both mathematics and technology.</p>
+            <br>
+            <br>
+           
+           <div class="connect">
+            <button class="download"><a href="/JacobMolomo_CV.pdf" download="MyCV.pdf">Download CV</a></button>
+             &nbsp; &nbsp; &nbsp;
+            <button class="download">Let's Talk</button>
+           </div>
+          <img src="MyProfile.jpeg" id="prf">
+        </div>
+        <div id="education">
+            <h4 style="padding: 25px;">EDUCATION</h4>
+            <div class="Details">
+               <h3 style="text-align: center; padding: 8px;">Primary School</h3>
+               Name:  Chris Hani <br>
+               From: 2008 - 2016 <br>
+               Head: 0824822611
 
-<nav>
-    <div class="logo">JM Molomo</div>
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox" id="icon">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-    </label>
-    <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="details2.php">About</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-
-<section class="home" id="home">
-    <div class="home-content">
-        <h3>Hello, Welcome</h3>
-        <br>
-        <h1>JM Molomo</h1>
+            </div>
+            <img src="Arrow.png" alt="arrow" id="arrow">
+            <div class="Details Details2">
+                <h3 style="text-align: center; padding: 8px;">High School</h3>
+                Name:  Gwenane Secondary<br>
+                From: 2017 - 2021 <br>
+                Science Stream <br>
+                Head: 082481177
+            </div>
+            <img src="Arrow.png" alt="arrow" id="arrow">
+            <div class="Details Details3">
+                <h3 style="text-align: center; padding: 8px;">University</h3>
+              University of Johannesburg <br>
+              2022 - 2025 <br>
+              Bsc MathSci in <br>
+              Apm & CompSci
+            </div>
+  
+        </div>
        
-        <br>
-        <br>
-        <p>As a dedicated upcoming full-stack developer,<br> I specialise
-            in creating comprenhensive web applications that combine<br>
-            seamless user experiences with powerful backend functionality.
-            </p>
-        <button class="btn">Download CV</button>
+    </div>
+    <div class="project" id="projectt">
+        <h2 style="color: white; text-align: center;">PROJECTs</h2>
+        <div class="project-content">
+          
+<h3 style="padding: 35px ">
+1. Client-Server File Transfer Application  <br>
+2. HTTP Server Development  <br>
+3. Image Upload System  <br>
+4. Database-Backed System  <br>
+5. Barcode Verification System  <br>
+6. Shopping Website - EasyBuy  <br>
+7. UDP Communication for File Transfer <br> 
+</h3>
+    <h3>Please Press the github button on the Top right.</h3>
+        </div>
     </div>
     
-    <div class="home-img">
-        <img src="Screenshot (51).jpg" alt="My Image">
-    </div>
-</section>
-
 </body>
 </html>
